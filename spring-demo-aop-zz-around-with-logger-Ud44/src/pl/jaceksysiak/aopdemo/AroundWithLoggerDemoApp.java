@@ -16,8 +16,7 @@ public class AroundWithLoggerDemoApp {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 		
 		// get the bean from spring container
-		TrafficFortuneService theFortuneService = 
-				context.getBean("trafficFortuneService", TrafficFortuneService.class);
+		TrafficFortuneService theFortuneService = context.getBean("trafficFortuneService", TrafficFortuneService.class);
 		
 		myLogger.info("\nMain Program: AroundDemoApp");
 		
